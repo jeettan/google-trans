@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  
+}
+
+body {
+
+  background: linear-gradient(to right, #E040FB, #00BCD4);
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input-field{
+
+  font-size:30px; 
+
+}
+
+.center {
+
+  position: absolute;
+  top: 50%;
+  width:100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  width: 1200px;
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+textarea {
+  resize: none;
+  padding: 10px;
+  font-family: 'Roboto';font-size: 18px;
+}
+
+.select {
+
+  margin-bottom: 10px;
+}
+
+.swap:hover {
+
+  cursor: pointer
+
+}
+
+.click {
+
+  background-color: rgb(57, 105, 225);
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.click:hover {
+
+  background-color: rgb(10, 10, 212);
+  cursor: pointer;
+}
